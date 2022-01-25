@@ -26,9 +26,9 @@ public class Logar {
 		 .Aceitartermos()
 		 .Clicarnobotãoentreoucadastre()
 		 .Digitaremail("").Digitasenha("")
-	     .Clicarnobotãoentrar()
-	     .CapturartextovalidacaoEmail()
-	     .CapturartextovalidacaoSenha();
+	         .Clicarnobotãoentrar()
+	         .CapturartextovalidacaoEmail()
+	         .CapturartextovalidacaoSenha();
 	   		
 	}
 	@Test
@@ -37,8 +37,8 @@ public class Logar {
 		 .Aceitartermos()
 		 .Clicarnobotãoentreoucadastre()
 		 .Digitaremail("teste@hotmail.com").Digitasenha("")
-	     .Clicarnobotãoentrar()
-	     .CapturartextovalidacaoSenha();
+	         .Clicarnobotãoentrar()
+	         .CapturartextovalidacaoSenha();
 	   		
 	}
 	@Test
@@ -47,8 +47,8 @@ public class Logar {
 		 .Aceitartermos()
 		 .Clicarnobotãoentreoucadastre()
 		 .Digitaremail("").Digitasenha("teste1234")
-	     .Clicarnobotãoentrar()
-	     .CapturartextovalidacaoEmail();
+	         .Clicarnobotãoentrar()
+	         .CapturartextovalidacaoEmail();
 	   		
 	}	
 	@Test
@@ -57,8 +57,8 @@ public class Logar {
 		 .Aceitartermos()
 		 .Clicarnobotãoentreoucadastre()
 		 .Digitaremail("vivianealves240498@hotmail.com").Digitasenha("teste1234")
-	     .Clicarnobotãoentrar()
-	     .CapturartextovalidacaoSenhainvalida();
+	         .Clicarnobotãoentrar()
+	         .CapturartextovalidacaoSenhainvalida();
 	   		
 	}	
 	@Test
@@ -67,8 +67,8 @@ public class Logar {
 		 .Aceitartermos()
 		 .Clicarnobotãoentreoucadastre()
 		 .Digitaremail("vivianealves240498@hotmail.com").Digitasenha("Nintendo64")
-	     .Clicarnobotãoentrar()
-	     .Capturartextovalidacaotitulopedido();
+	         .Clicarnobotãoentrar()
+	         .Capturartextovalidacaotitulopedido();
 	        		
 	}		
 	@After
