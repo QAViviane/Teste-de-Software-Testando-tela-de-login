@@ -17,7 +17,7 @@ public class Paginabase {
 
 	public String Capturartextovalidacao(){
 		
-		return navegador.findElement(By.xpath("//*[@id=\"my-account-user-data\"]/div[2]/div")).getText();
+	  return navegador.findElement(By.xpath("//*[@id=\"my-account-user-data\"]/div[2]/div")).getText();
 	    
 	}
 }
