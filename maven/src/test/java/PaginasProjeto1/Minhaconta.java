@@ -19,9 +19,9 @@ public class Minhaconta extends Paginabase {
  */
 	public Minhaconta Clicariconenomedeusuario() throws InterruptedException {
 		
-	 navegador.findElement(By.cssSelector("#header-account > div.header-topbar-btn.logged > div")).click();;
-         Thread.sleep(2000);	
-         return this;
+	           navegador.findElement(By.cssSelector("#header-account > div.header-topbar-btn.logged > div")).click();;
+                   Thread.sleep(2000);	
+                   return this;
      
 	}
 /**
@@ -30,7 +30,7 @@ public class Minhaconta extends Paginabase {
  */
 	public Minhaconta CapturartextovalidacaoEmail(){
 			
-	       WebElement msg = navegador.findElement(By.cssSelector("#my-wrapper > section > div > form > div:nth-child(3) > small"));
+	           WebElement msg = navegador.findElement(By.cssSelector("#my-wrapper > section > div > form > div:nth-child(3) > small"));
 		   String mensagem = msg.getText();       
 		   assertEquals("Informe seu email",mensagem);	  		   
 		   return this;	     
@@ -41,7 +41,7 @@ public class Minhaconta extends Paginabase {
  */
 	public Minhaconta CapturartextovalidacaoSenha(){
 			
-	       WebElement msg = navegador.findElement(By.cssSelector("#my-wrapper > section > div > form > div:nth-child(4) > small"));
+	           WebElement msg = navegador.findElement(By.cssSelector("#my-wrapper > section > div > form > div:nth-child(4) > small"));
 		   String mensagem = msg.getText();		       
 		   assertEquals("Informe sua senha",mensagem);	  		   
 		   return this;	     
@@ -52,7 +52,7 @@ public class Minhaconta extends Paginabase {
  */
 	public Minhaconta CapturartextovalidacaoSenhainvalida(){
 			
-	       WebElement msg = navegador.findElement(By.cssSelector("#my-wrapper > section > div > div.collapsible.opened > div"));
+	           WebElement msg = navegador.findElement(By.cssSelector("#my-wrapper > section > div > div.collapsible.opened > div"));
 		   String mensagem = msg.getText();    
 		   assertEquals("Não foi possível realizar o login. Verifique seu email e senha.",mensagem);	  		   
 		   return this;	     
@@ -63,7 +63,7 @@ public class Minhaconta extends Paginabase {
  */
 	public Minhaconta Capturartextovalidacaotitulopedido(){
 			
-	       WebElement msg = navegador.findElement(By.cssSelector("#my-account-content > div > h1"));
+	           WebElement msg = navegador.findElement(By.cssSelector("#my-account-content > div > h1"));
 		   String mensagem = msg.getText();    
 		   assertEquals("Pedidos",mensagem);	  		   
 		   return this;	     
