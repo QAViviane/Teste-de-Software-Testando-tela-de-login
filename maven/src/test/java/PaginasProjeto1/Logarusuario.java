@@ -25,7 +25,7 @@ public class Logarusuario extends Paginabase {
 	    WebElement element = navegador.findElement(By.cssSelector("#confirmPolicyButton"));
 	    JavascriptExecutor executor = (JavascriptExecutor)navegador; 
 	    executor.executeScript("arguments[0].click()", element);
-	  	return this;
+	    return this;
 	} 
 
 /**
@@ -37,7 +37,7 @@ public class Logarusuario extends Paginabase {
 	public Paginaprincipal Cricarnalogodapagina() throws InterruptedException {
 
 		  navegador.findElement(By.cssSelector("#header-desktop-logo-wrapper > div > a.header-logo-cr.logo-cr-text")).click();	
-          Thread.sleep(1000);
+                  Thread.sleep(1000);
 		  return new Paginaprincipal (navegador);
 	}	     		 	    
 	
@@ -50,6 +50,6 @@ public class Logarusuario extends Paginabase {
 		
 		  navegador.findElement(By.cssSelector("#header-account > a")).click();
 		  Thread.sleep(1000);
-	      return new Formulariologin(navegador);
+	         return new Formulariologin(navegador);
 	}      
 }
