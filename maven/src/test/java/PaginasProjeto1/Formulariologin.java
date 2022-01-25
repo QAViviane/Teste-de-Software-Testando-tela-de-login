@@ -35,10 +35,8 @@ public class Formulariologin extends Paginabase {
   */
 	public Minhaconta Clicarnobotãoentrar() throws InterruptedException {
 	
-    	navegador.findElement(By.cssSelector("#my-wrapper > section > div > form > div:nth-child(7) > button")).click();
-        Thread.sleep(4000);		
+           	navegador.findElement(By.cssSelector("#my-wrapper > section > div > form > div:nth-child(7) > button")).click();
+                Thread.sleep(4000);		
 		return new Minhaconta(navegador) ;
-	}
-   
-	
+	}	
 }
