@@ -50,6 +50,6 @@ public class Logarusuario extends Paginabase {
 		
 		  navegador.findElement(By.cssSelector("#header-account > a")).click();
 		  Thread.sleep(1000);
-	         return new Formulariologin(navegador);
+	          return new Formulariologin(navegador);
 	}      
 }
