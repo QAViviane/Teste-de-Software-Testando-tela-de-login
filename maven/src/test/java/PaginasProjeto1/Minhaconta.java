@@ -20,8 +20,8 @@ public class Minhaconta extends Paginabase {
 	public Minhaconta Clicariconenomedeusuario() throws InterruptedException {
 		
 	 navegador.findElement(By.cssSelector("#header-account > div.header-topbar-btn.logged > div")).click();;
-     Thread.sleep(2000);	
-     return this;
+         Thread.sleep(2000);	
+         return this;
      
 	}
 /**
@@ -76,9 +76,8 @@ public class Minhaconta extends Paginabase {
 	public Dadoscadastrais Cricaremmeusdados() throws InterruptedException {
 		
 	       navegador.findElement(By.cssSelector("#header-account > div.cr-popover-content.logged > a:nth-child(1)")).click();
-           Thread.sleep(2000); 	  
+               Thread.sleep(2000); 	  
 	       return new Dadoscadastrais(navegador);
 	     
-	}
-	
+	}	
 }
